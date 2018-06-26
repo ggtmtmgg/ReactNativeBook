@@ -1,0 +1,9 @@
+{
+  "title": "React Native Book",
+  "description": "著者がReact Native開発によるアプリ開発に必要な知識を整理するためのGitbook",
+  "author": "ggtmtmgg",
+  "language": "ja",
+  "plugins": [
+    "summary"
+  ]
+}

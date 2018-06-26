@@ -112,6 +112,7 @@ UTFの特殊文字を定数で定義している
 る
 - JSとJavaのブリッジ
 - Native上でJSを動かす
+
 ## ReactAndroid/
 ### UIManagerModule/
 Reactが差分を計算してReactShadowNode渡す、
