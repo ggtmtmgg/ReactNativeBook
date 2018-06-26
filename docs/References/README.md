@@ -10,7 +10,7 @@
 | ---- | ---- |
 | [React NativeをWebに持ってくることの意味](https://blog.nkzn.info/entry/2018/05/29/210030) | ReactNativeの責務の理解に役立ちました |
 | [Web最新技術がてんこ盛りのreact-native-domから目が離せない](https://blog.nkzn.info/entry/2018/05/26/020312) | ReactNativeの責務の理解に役立ちました |
-| [DroidKaigi2016 Fireside Chatの雑議事録](https://blog.nkzn.info/entry/2016/02/19/170321) | - |
+| [DroidKaigi2016 Fireside Chatの雑議事録](https://blog.nkzn.info/entry/2016/02/19/170321) | 大御所さんたちの会話が楽しいです |
 | [React Native Androidはなぜ動くのか](https://www.youtube.com/watch?v=DKr5ckadMjc) | ReactNativeの仕組みの理解に役立ちました |
 | [React Nativeで現在地をもらってくる](https://qiita.com/Nkzn/items/ed7a9b9d336f5781ecac) | - |
 | [React Nativeでオーバーレイなフッターを実装する](https://qiita.com/Nkzn/items/ac27a4b39218884facc5) | - |
