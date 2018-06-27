@@ -24,25 +24,6 @@
 
 
 
-## Redux
-- [結局FluxやらReduxやらって何なのか個人的なまとめ - Qiita](https://qiita.com/syossan27/items/7e1b2e07ac68b96bdaa7)
-- [Reduxのreselectとは - Qiita](https://qiita.com/zakiyama/items/5258e6f1ae37f63034b9)
-- [Reduxにおけるreducer分割とcombineReducersについて - Qiita](https://qiita.com/kuy/items/59c6d7029a10972cba78)
-### 概念
-#### Action
-#### Reducer
-#### Store
-#### dispatch
-#### conbine
-#### selector
-##### reselect
-### サンプルコード
-- [reduxjs/redux](https://github.com/reduxjs/redux/tree/master/examples)
-##### counter
-##### async
-##### shopping-cart
-## react-redux
-- [reactjs/redux](https://github.com/reactjs/redux/tree/master/examples)
 ## react-navigation
 - [React Navigation · Routing and navigation for your React](https://reactnavigation.org/)
 ## redux-saga

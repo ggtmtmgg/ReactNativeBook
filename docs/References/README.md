@@ -8,6 +8,9 @@
 
 | タイトル | 一言 |
 | ---- | ---- |
+| [結局FluxやらReduxやらって何なのか個人的なまとめ - Qiita](https://qiita.com/syossan27/items/7e1b2e07ac68b96bdaa7) | - |
+| [Reduxのreselectとは - Qiita](https://qiita.com/zakiyama/items/5258e6f1ae37f63034b9) | - |
+| [Reduxにおけるreducer分割とcombineReducersについて - Qiita](https://qiita.com/kuy/items/59c6d7029a10972cba78) | - |
 | [React NativeをWebに持ってくることの意味](https://blog.nkzn.info/entry/2018/05/29/210030) | ReactNativeの責務の理解に役立ちました |
 | [Web最新技術がてんこ盛りのreact-native-domから目が離せない](https://blog.nkzn.info/entry/2018/05/26/020312) | ReactNativeの責務の理解に役立ちました |
 | [DroidKaigi2016 Fireside Chatの雑議事録](https://blog.nkzn.info/entry/2016/02/19/170321) | 大御所さんたちの会話が楽しいです |

@@ -8,3 +8,12 @@
 2. 空の項の本文を埋める
 3. 新しく見つけた学びたいことの空の項を作る
 4. 以下繰り返し
+
+
+## TODO
+著者のメモです。
+
+- compose関数の内部構造を調べる
+- connect関数の内部構造を調べる
+- redux-firestoreとreact-redux-firebaseの責務を明確にする
+- storeにfirestoreやfirebaseを作っていく構造の理由を把握する
