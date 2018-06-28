@@ -13,7 +13,8 @@
 ## TODO
 著者のメモです。
 
-- compose関数の内部構造を調べる
-- connect関数の内部構造を調べる
+- connect関数の使い方を明確にする
+- shallow-Equalの実装を明確にする
 - redux-firestoreとreact-redux-firebaseの責務を明確にする
 - storeにfirestoreやfirebaseを作っていく構造の理由を把握する
+- compose関数の内部構造を調べる
