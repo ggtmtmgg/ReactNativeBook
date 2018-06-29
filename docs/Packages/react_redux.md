@@ -107,6 +107,3 @@ export default connect(mapStateToProps)(App);
   [areStatePropsEqual] (Function): pureがtrueのとき、mapStateToPropsの返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
   [areMergedPropsEqual] (Function): pureがtrueのとき、mergePropsの返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
   [storeKey] (String): storeのどこを読み込むかのcontextのkey。複数のstoreを持つことに優位がない場合に必要になりそうです。デフォルト: 'store'
-
-## HOC - High-Order Component
-## compose

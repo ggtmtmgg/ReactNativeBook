@@ -195,6 +195,8 @@ const store = createStore(reducer)
 ### conbine
 ### selector
 #### reselect
+## compose
+
 ## サンプルコード
 - [reduxjs/redux](https://github.com/reduxjs/redux/tree/master/examples)
 ### counter
