@@ -2,13 +2,13 @@
 react-reduxはReact公式のReduxのためのバインディングです。
 component内でグローバルstateにアクセスしたい・必要なdispatcherを呼びたい等の問題を解決するために、
 componentとstoreのつなぎ込みをします。
-主にProviderとconnect()の役割を抑えておきたいです。
+主にProviderと`connect()`の役割を抑えておきたいです。
 
 ## Provider ([公式](https://github.com/reduxjs/react-redux/blob/master/docs/api.md#provider-store))
 
-低い階層のcomponent内でconnect()を呼ぶことでRedux storeを使えるようにします。
-通常、ルートのcomponentをラップすることなくconnect()を使用することはできません。
-もし本当に必要であれば、手動でstoreをpropとしてすべてのconnect()されるcomponentにわたすこともできますが、
+低い階層のcomponent内で`connect()`を呼ぶことでRedux storeを使えるようにします。
+通常、ルートのcomponentをラップすることなく`connect()`を使用することはできません。
+もし本当に必要であれば、手動でstoreをpropとしてすべての`connect()`されるcomponentにわたすこともできますが、
 単体テストや不完全ではないコードでだけすることをお勧めします。
 
 受け取るProps
@@ -39,7 +39,7 @@ export default function Root() {
 ```App.js
 class App extends Component {
   render() {
-    // connect()によってthis.props.userが渡されている
+    // `connect()`によってthis.props.userが渡されている
     const { user: { name } } = this.props
     return (
       <Text>{ name }</Text>
@@ -52,7 +52,7 @@ function mapStateToProps(state) {
   return { user: state.user }
 }
 
-// Providerコンポーネントで囲っているおかげでconnect()を呼び出せる
+// Providerコンポーネントで囲っているおかげで`connect()`を呼び出せる
 // Appコンポーネント内でstate.userをpropsとして受け取れるようにする
 export default connect(mapStateToProps)(App);
 ```
@@ -63,16 +63,16 @@ export default connect(mapStateToProps)(App);
 
 引数
 - [mapStateToProps(state, [ownProps]): stateProps] (Function):
-  この引数を指定すると、connect()によって返される新しいコンポーネントはRedux storeの更新をsubscribeした状態になります。
-  これは、storeが更新されるたびにmapStateToPropsが呼び出されることを意味します。
-  mapStateToPropsの返り値は、コンポーネントのpropsにマージされる単純なオブジェクトでなければなりません。
-  storeの更新をsubscribeしたくない場合は、mapStateToPropsの代わりにnullまたはundefinedを渡します。
+  この引数を指定すると、`connect()`によって返される新しいコンポーネントはRedux storeの更新をsubscribeした状態になります。
+  これは、storeが更新されるたびに`mapStateToProps()`が呼び出されることを意味します。
+  `mapStateToProps()`の返り値は、コンポーネントのpropsにマージされる単純なオブジェクトでなければなりません。
+  storeの更新をsubscribeしたくない場合は、`mapStateToProps()`の代わりにnullまたはundefinedを渡します。
 
-  mapStateToProps関数が2つの引数を取る形で宣言されている場合、
+  `mapStateToProps()`関数が2つの引数を取る形で宣言されている場合、
   storeのstateが1つ目の引数として渡され、2つ目の引数としてpropsが渡されます。
-  shallowEqual()によって変更があったとみなされたpropsを受け取った際に再呼び出しされます。(2番目の引数は通常、規約に従ってownPropsと呼ばれます)
+  `shallowEqual()`によって変更があったとみなされたpropsを受け取った際に再呼び出しされます。(2番目の引数は通常、規約に従ってownPropsと呼ばれます)
 
-  mapStateToProps関数の1つ目の引数はRedux storeのstate全体で、propsとして1つのオブジェクトを返します。
+  `mapStateToProps()`関数の1つ目の引数はRedux storeのstate全体で、propsとして1つのオブジェクトを返します。
   これはよくselectorと呼ばれます。
   [reselect](https://github.com/reduxjs/reselect)を使って効率的にselector群を結合し、派生データを計算できます。
 
@@ -87,11 +87,11 @@ export default connect(mapStateToProps)(App);
   もし2つの引数を受け取るように宣言されたら、1つ目の引数としてdispatch、2つ目の引数として接続されたコンポーネントのpropsを受け取ります。
   そして、新しいpropsを受け取った際に再呼び出しされます。(2番目の引数は通常、規約に従ってownPropsと呼ばれます)
 
-  もしmapDispatchToProps関数もしくはaction creatorのオブジェクトを渡さない場合、
-  デフォルトのmapDispatchToPropsはコンポーネントのpropsにただdispatchへの挿入を実装です。
+  もし`mapDispatchToProps()`関数もしくはaction creatorのオブジェクトを渡さない場合、
+  デフォルトの`mapDispatchToProps()`はコンポーネントのpropsにただdispatchへの挿入を実装です。
 
 - [mergeProps(stateProps, dispatchProps, ownProps): props] (Function):
-  もし渡せれたら、この関数はmapStateToProps()とmapDispatchToProps()の結果とpropsを渡されます。
+  もし渡せれたら、この関数は`mapStateToProps()`と`mapDispatchToProps()`の結果とpropsを渡されます。
   返り値のオブジェクトがラップされたコンポーネントのpropsとして渡されます。
   state
   おそらくpropsに応じてstateの一部を返したい場合や、propsに応じて特定の変数にaction creatorをバインドしたい場合にこの関数を使うでしょう。
@@ -99,11 +99,11 @@ export default connect(mapStateToProps)(App);
 
 - [options] (Object)
   もし渡されたら、connectorの振る舞いを更にカスタマイズします。
-  connectAdvanced()に渡せる引数に加えて、connect()は以下の引数を受け取ることができます:
+  `connectAdvanced()`に渡せる引数に加えて、`connect()`は以下の引数を受け取ることができます:
 
-  [pure] (Boolean): もしtrueで、対応するstateとpropsがそれぞれのチェックに基づいて変更がなければ、connect() 再renderとmapStateToPropsとmapDispatchToPropsとmergePropsの呼び出しを避けます。
-  [areStatesEqual] (Function): pureがtrueのとき、store stateを直前の値と比べる関数。デフォルト: strictEqual(===)
-  [areOwnPropsEqual] (Function): pureがtrueのとき、渡されるpropsを直前の値と比べる関数。デフォルト: shallowEqual(===)
-  [areStatePropsEqual] (Function): pureがtrueのとき、mapStateToPropsの返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
-  [areMergedPropsEqual] (Function): pureがtrueのとき、mergePropsの返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
-  [storeKey] (String): storeのどこを読み込むかのcontextのkey。複数のstoreを持つことに優位がない場合に必要になりそうです。デフォルト: 'store'
+  - [pure] (Boolean): もし`true`で、対応するstateとpropsがそれぞれのチェックに基づいて変更がなければ、`connect()` 再renderと`mapStateToProps()`と`mapDispatchToProps()`とmergePropsの呼び出しを避けます。
+  - [areStatesEqual] (Function): pureが`true`のとき、store stateを直前の値と比べる関数。デフォルト: strictEqual(===)
+  - [areOwnPropsEqual] (Function): pureが`true`のとき、渡されるpropsを直前の値と比べる関数。デフォルト: shallowEqual(===)
+  - [areStatePropsEqual] (Function): pureが`true`のとき、`mapStateToProps()`の返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
+  - [areMergedPropsEqual] (Function): pureが`true`のとき、mergePropsの返り値を直前の値と比べる関数。デフォルト: shallowEqual(===)
+  - [storeKey] (String): storeのどこを読み込むかのcontextのkey。複数のstoreを持つことに優位がない場合に必要になりそうです。デフォルト: 'store'

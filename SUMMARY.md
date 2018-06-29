@@ -15,7 +15,7 @@
 
 - [Packages](docs/Packages/README.md)
 
-    - [react.md](docs/Packages/react.md)
+    - [React](docs/Packages/react.md)
     - [react-redux](docs/Packages/react_redux.md)
     - [Redux](docs/Packages/redux.md)
 - [ReactNative](docs/ReactNative/README.md)

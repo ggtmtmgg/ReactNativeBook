@@ -188,6 +188,8 @@ const reducer = combineReducers({ visibilityFilter, todos })
 const store = createStore(reducer)
 ```
 
+
+## 独特な概念
 ### Action
 ### Reducer
 ### Store
@@ -196,6 +198,7 @@ const store = createStore(reducer)
 ### selector
 #### reselect
 ## compose
+## 簡単に言うと
 
 ## サンプルコード
 - [reduxjs/redux](https://github.com/reduxjs/redux/tree/master/examples)
