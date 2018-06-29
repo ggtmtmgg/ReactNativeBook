@@ -61,7 +61,12 @@ export default connect(mapStateToProps)(App);
 コンポーネントをRedux storeに接続する機能を提供するAPIです。
 コンポーネント自体には変更を加えずに新しいコンポーネントクラスを返します。
 
-引数
+`export default connect(mapStateToProps, mapDispatchToProps)(HomeComponent)`
+のような形で使うことが多いです。
+`mapXXXXToProps()`はReduxのstoreからHomeComponentのpropsとして受け取りたいものを返す関数が定義されています。
+connectの返り値自体はHomeComponentをラップした親Componentです。その親Componentの中でstoreから必要なプロパティを取り出しHomeCompnentにpropsとして渡します。
+
+### connect()が受け取る引数
 - [mapStateToProps(state, [ownProps]): stateProps] (Function):
   この引数を指定すると、`connect()`によって返される新しいコンポーネントはRedux storeの更新をsubscribeした状態になります。
   これは、storeが更新されるたびに`mapStateToProps()`が呼び出されることを意味します。

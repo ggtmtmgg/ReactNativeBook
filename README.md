@@ -11,7 +11,7 @@ Qiita等に知識を断片的にまとめてくと知識全体が見えなくな
 4. 以下繰り返し
 
 
-## TODO
+## TO-DO リスト
 著者のメモです。
 
 - connect関数の使い方を明確にする
@@ -19,3 +19,5 @@ Qiita等に知識を断片的にまとめてくと知識全体が見えなくな
 - redux-firestoreとreact-redux-firebaseの責務を明確にする
 - storeにfirestoreやfirebaseを作っていく構造の理由を把握する
 - compose関数の内部構造を調べる
+- 以下の概念を分類して空項を作りTODOリストを更新する
+  - Presentational / Container component
