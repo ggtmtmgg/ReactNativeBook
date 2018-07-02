@@ -33,6 +33,8 @@
 | [Build React Native Chat App In 30 Minutes](https://www.youtube.com/watch?v=7Ot5LSGHLyY) | 30分のDemoでいきなりチャットアプリができます |
 | [Building a Simple ToDo App With React Native and Firebase](https://www.youtube.com/watch?v=3ab0K6viEp0) | - |
 | [DroidKaigi 2018 - React Native Androidはなぜ動くのか / nkzn [JA]](https://www.youtube.com/watch?v=DKr5ckadMjc) | - |
+| [fastlane](https://docs.fastlane.tools/) | - |
+| [fastlaneの簡単な紹介と使用例](http://labs.septeni.co.jp/entry/2016/09/14/162643) | - |
 
 ## Javascript
 | タイトル | 一言 |
