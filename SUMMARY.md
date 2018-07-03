@@ -13,10 +13,12 @@
 
 - [Others](docs/Others/README.md)
 
-    - [fastlane.md](docs/Others/fastlane.md)
+    - [fastlane](docs/Others/fastlane.md)
+    - [ストアリリース](docs/Others/release.md)
 - [Packages](docs/Packages/README.md)
 
     - [React](docs/Packages/react.md)
+    - [react-navigation](docs/Packages/react_navigation.md)
     - [react-redux](docs/Packages/react_redux.md)
     - [Redux](docs/Packages/redux.md)
 - [ReactNative](docs/ReactNative/README.md)
