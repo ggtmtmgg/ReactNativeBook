@@ -18,7 +18,7 @@
 - [Packages](docs/Packages/README.md)
 
     - [React](docs/Packages/react.md)
-    - [react-navigation](docs/Packages/react_navigation.md)
+    - [React Navigation v2](docs/Packages/react_navigation.md)
     - [react-redux](docs/Packages/react_redux.md)
     - [Redux](docs/Packages/redux.md)
 - [ReactNative](docs/ReactNative/README.md)
