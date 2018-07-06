@@ -81,3 +81,8 @@ this.props.navigation.dispatch(backAction);
 - `DrawerNavigator`: Drawerを表示すうるNavigator。 Drawerは左側から画面横幅60%くらいでメニューの用のものがでてくるやつ。
 - `TabNavigator`: タブでスクリーンを切り替えれるNavigator
 - `BottomTabNavigator`: TabNavigatorのタブが画面下にあるNavigator
+
+
+## サンプル
+### スイッチの形
+### スタック > タブの形
